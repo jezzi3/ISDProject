@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Movie Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/basic.css">
+<link rel="stylesheet" href="css/icon.css">
+</head>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #ffffff;
+  line-height: 1.8;
+  background-color:#707070;
+}
+
+
+.fa-user:before{content:"\f007"}
+.fa-envelope-o:before{content:"\f003"}
+.fa-envelope:before{content:"\f0e0"}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Bg image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('img/bg-masthead.jpg');
+  min-height: 100%;
+
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="hyun-top">
+  <div class="hyun-bar" id="myNavbar">
+    <a class="hyun-bar-item hyun-button hyun-hover-black hyun-hide-medium hyun-hide-large hyun-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="hyun-bar-item hyun-button">HOME</a>
+    <a href="#login" class="hyun-bar-item hyun-button hyun-hide-small"><i class="fa fa-user"></i> LOGIN</a>
+    <a href="#portfolio" class="hyun-bar-item hyun-button hyun-hide-small"><i class="fa fa-film"></i> MOVIES</a>
+    <a href="#contact" class="hyun-bar-item hyun-button hyun-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="hyun-bar-block hyun-white hyun-hide hyun-hide-large hyun-hide-medium">
+    <a href="#about" class="hyun-bar-item hyun-button" onclick="toggleFunction()">LOGIN</a>
+    <a href="#portfolio" class="hyun-bar-item hyun-button" onclick="toggleFunction()">MOVIES</a>
+    <a href="#contact" class="hyun-bar-item hyun-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 hyun-display-container" id="home">
+  <div class="hyun-display-middle">
+    <span class="hyun-center hyun-padding-large  hyun-xlarge hyun-wide" >
+        <form>
+            <div class="input-group"  >
+                <input type="search" class="form-control form-control-lg" placeholder="Search for...">
+                <button type="submit" class="btn btn-block btn-lg btn-primary btn-hover-red">Go!</button>
+            </div>
+          </form>
+        </span>
+  </div>
+</div>
+
+
+
+<!-- Container (Movie Section) -->
+<div class="hyun-center hyun-content hyun-container hyun-padding-64">
+    <span class="hyun-xxlarge hyun-text-white hyun-wide hyun-opacity-min">Sales and specials</span>
+  <p class="hyun-center"><em>Watch the best shows and movies for less</em></p>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="hyun-row-padding hyun-center">
+    <div class="hyun-col m3">
+      <img src='img/endgame.jpg' style="width:100%" onclick="onClick(this)" class="hyun-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="hyun-col m3">
+      <img src='img/ala.jpg' style="width:100%" onclick="onClick(this)" class="hyun-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="hyun-col m3">
+      <img src='img/dogs.jpg' style="width:99%" onclick="onClick(this)" class="hyun-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="hyun-col m3">
+      <img src='img/Tolkien.jpg' style="width:100%" onclick="onClick(this)" class="hyun-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="hyun-content hyun-container hyun-padding-64" id="about">
+  <h3 class="hyun-center">ABOUT US</h3>
+  <p class="hyun-center"><em>The Biggest Movie Store</em></p>
+  <p>;lsadkfl;dsk;lsdkflksdjfklsdjfklsdjfklvdm,nm,fdnmnmnmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmkkjflsdjflksdjflkdsjflkjbvnklnjvclkdsjf;lks;dlflknlsdkfgjnl.</p>
+  <div class="hyun-row">
+    <div class="hyun-col m6 hyun-center hyun-padding-large">
+      <img src='img/logo.jpg'  width="400" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="hyun-col m6 hyun-hide-small hyun-padding-large">
+      <p>Welcome to my website.sfsdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.</p>
+    </div>
+  </div>
+</div>
+
+<div class="hyun-row hyun-center hyun-dark-grey hyun-padding-16">
+  <div class="hyun-quarter hyun-section">
+    <span class="hyun-xlarge">150+</span><br>
+    Partners
+  </div>
+  <div class="hyun-quarter hyun-section">
+    <span class="hyun-xlarge">10m</span><br>
+    Movies
+  </div>
+  <div class="hyun-quarter hyun-section">
+    <span class="hyun-xlarge">2days</span><br>
+    Delivery
+  </div>
+  <div class="hyun-quarter hyun-section">
+    <span class="hyun-xlarge">99.9</span><br>
+    Consumer reports
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Container (Contact Section) -->
+<div class="hyun-center hyun-content hyun-container hyun-padding-64" id="contact">
+  <h3 class="hyun-center">Contact to us</h3>
+  <p class="hyun-center"><em>We'd love your feedback!</em></p>
+
+  <div class="hyun-row hyun-padding-10 hyun-section">
+
+    <div class="hyun-centerhyun-col m8 hyun-panel">
+      <div class="hyun-large hyun-margin-bottom">
+        <i class="fa fa-map-marker fa-fw  hyun-xlarge hyun-margin-right"></i> Sydney, AU
+        <i class="fa fa-phone fa-fw  hyun-xlarge hyun-margin-right"></i> Phone: +61 123 4567
+        <i class="fa fa-envelope fa-fw hyun-xlarge hyun-margin-right"></i> Email: UTS@it.com
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="hyun-center hyun-black hyun-padding-64 ">
+  <a href="#home" class="hyun-button hyun-light-grey"><i class="fa fa-arrow-up hyun-margin-right"></i>To the top</a>
+
+</footer>
+
+<script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "hyun-bar" + " hyun-card" + " hyun-animate-top" + " hyun-white";
+    } else {
+        navbar.className = navbar.className.replace(" hyun-card hyun-animate-top hyun-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("hyun-show") == -1) {
+        x.className += " hyun-show";
+    } else {
+        x.className = x.className.replace(" hyun-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
