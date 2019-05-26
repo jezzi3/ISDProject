@@ -1,3 +1,10 @@
+<%-- 
+    Document   : css
+    Created on : May 30, 2018, 4:11:21 PM
+    Author     : Sean
+--%>
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
 <%@page import="uts.isd.controller.*"%>
@@ -84,7 +91,7 @@ body, html {
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- First Image with Search bar -->
 <div class="bgimg-1 oms-display-container" id="home">
   <div class="oms-display-middle">
     <span class="oms-center oms-padding-large  oms-xlarge oms-wide" >
