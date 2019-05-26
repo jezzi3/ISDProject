@@ -1,0 +1,42 @@
+      <!-- Navbar (sit on top) -->
+
+<div class="oms-top">
+  <div class="oms-bar" id="myNavbar">
+    <a class="oms-bar-item oms-button oms-hover-black oms-hide-medium oms-hide-large oms-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.jsp" class="oms-bar-item oms-button">HOME</a>
+    <a href="register.jsp" class="oms-bar-item oms-button oms-hide-small"><i class="fa fa-user-plus"></i> REGISTER</a>
+    <a href="login.jsp" class="oms-bar-item oms-button oms-hide-small"><i class="fa fa-user"></i> LOGIN</a>
+    <a href="movie.jsp" class="oms-bar-item oms-button oms-hide-small"><i class="fa fa-film"></i> MOVIES</a>
+    <a href="cart.jsp" class="oms-bar-item oms-button oms-hide-small"><i class="fa fa-shopping-cart"></i> CART</a>
+  </div>
+
+    <!-- Navbar on small screens -->
+
+  <div id="navDemo" class="oms-bar-block oms-white oms-hide oms-hide-large oms-hide-medium">
+    <a href="register.jsp" class="oms-bar-item oms-button" onclick="toggleFunction()">REGISTER</a>
+    <a href="login.jsp" class="oms-bar-item oms-button" onclick="toggleFunction()">LOGIN</a>
+    <a href="movie.jsp" class="oms-bar-item oms-button" onclick="toggleFunction()">MOVIES</a>
+    <a href="cart.jsp" class="oms-bar-item oms-button" onclick="toggleFunction()">CART</a>
+  </div>
+</div>
+
+
+
+     <!-- Content -->
+
+
+
+
+
+
+
+
+
+
+     <!-- Footer -->
+<footer class="oms-center oms-black oms-padding-64 ">
+  <a href="#home" class="oms-button oms-light-grey"><i class="fa fa-arrow-up oms-margin-right"></i>To the top</a>
+
+</footer>
