@@ -1,3 +1,9 @@
+/*!
+    Document   : icon.css
+    Created on : May 14, 2018, 10:12:57 PM
+    Author     : Sean
+*/
+
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0; color: #ffffff; background-color:#707070;}
 footer,header,nav,section{display:block}
